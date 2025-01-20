@@ -1,9 +1,13 @@
 # SynapseHub - 智能 LLM API 网关与管理平台
 
 <div align="center">
-  <img src="public/logo.png" alt="SynapseHub Logo" width="120" height="120">
+  <h1>♻️</h1>
   <p><strong>一站式大语言模型 API 管理与调度平台</strong></p>
 </div>
+
+![SynapseHub Dashboard Preview](view.png)
+
+[English](README_EN.md) | [日本語](README_JP.md) | 简体中文
 
 ## 🌟 简介
 
@@ -12,10 +16,9 @@ SynapseHub 是一个强大的 LLM API 网关和管理平台，旨在简化企业
 ## ✨ 核心特性
 
 ### 🚀 智能路由与负载均衡
-- **多模型统一接入**: 支持 OpenAI、Anthropic Claude、本地部署模型等多种 LLM 的统一接入
+- **多模型统一接入**: 支持 OpenAI风格（目前计划支持dify风格） LLM 的统一接入
 - **智能负载分发**: 支持轮询、随机等多种负载均衡策略
-- **自动故障转移**: 自动检测模型可用性，确保服务稳定性
-- **动态路由策略**: 根据模型性能、成本等因素智能调度请求
+
 
 ### 🔒 安全与访问控制
 - **细粒度权限管理**: 完善的用户角色和权限控制系统
@@ -55,11 +58,37 @@ SynapseHub 是一个强大的 LLM API 网关和管理平台，旨在简化企业
 ## 🚀 快速开始
 
 ### 环境要求
-- Node.js 16+
-- MongoDB 4.4+
-- Redis 6+
+- Docker 和 Docker Compose
+- 或者独立安装:
+  - Node.js 16+
+  - MongoDB 4.4+
+  - Redis 6+
 
-### 安装部署
+### Docker 一键部署
+```bash
+# 克隆项目
+git clone https://github.com/yourusername/synapsehub.git
+
+# 进入项目目录
+cd synapsehub
+
+# 启动所有服务
+docker-compose up -d
+
+# 查看服务状态
+docker-compose ps
+
+# 查看服务日志
+docker-compose logs -f
+```
+
+服务端口说明:
+- Web 界面: http://localhost:3000
+- API 服务: http://localhost:3088
+- MongoDB: localhost:26889
+- Redis: localhost:6390
+
+### 手动安装部署
 ```bash
 # 克隆项目
 git clone https://github.com/yourusername/synapsehub.git

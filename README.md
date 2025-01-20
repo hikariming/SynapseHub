@@ -5,9 +5,11 @@
   <p><strong>一站式大语言模型 API 管理与调度平台</strong></p>
 </div>
 
+[English](README_EN.md) | [日本語](README_JP.md) | 简体中文
+
 ![SynapseHub Dashboard Preview](view.png)
 
-[English](README_EN.md) | [日本語](README_JP.md) | 简体中文
+
 
 ## 🌟 简介
 

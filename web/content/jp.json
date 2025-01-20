@@ -1,0 +1,378 @@
+{
+  "app": {
+    "locale": "jp",
+    "nav": {
+      "home": "ホーム",
+      "upstream": "アップストリーム",
+      "users": "ユーザー",
+      "logs": "ログ",
+      "setting": "設定",
+      "docs": "ドキュメント",
+      "logoAlt": "会社名",
+      "openMenu": "メインメニューを開く"
+    },
+    "welcome": {
+      "nav": {
+        "intro": "紹介",
+        "pricing": "料金",
+        "docs": "ドキュメント",
+        "login": "ログイン"
+      },
+      "knowledge": {
+        "create": "素材庫を作成",
+        "createDescription": "リンク、PDF、Word、TXT、MD などのドキュメントをインポートして素材庫を作成します。",
+        "name": "名前",
+        "description": "説明",
+        "fetchError": "素材庫の取得に失敗しました",
+        "createSuccess": "素材庫を作成しました"
+      }
+    },
+    "stats": {
+      "title": "システム概要",
+      "subtitle": "リアルタイムで主要指標を監視",
+      "upstream": "アップストリーム数",
+      "tokens": "トークン数",
+      "calls": "本日の呼び出し数",
+      "alerts": "アラート数",
+      "viewAll": "詳細を見る",
+      "trendTitle": "呼び出し傾向",
+      "timeRanges": {
+        "24h": "24時間",
+        "7d": "7日間",
+        "30d": "30日間",
+        "6m": "6ヶ月",
+        "1y": "1年"
+      }
+    },
+    "login": {
+      "title": "ログイン",
+      "subtitle": "AI チャット管理プラットフォーム",
+      "usernameLabel": "ユーザー名",
+      "passwordLabel": "パスワード",
+      "login": "ログイン",
+      "loggingIn": "ログイン中...",
+      "noAccount": "アカウントをお持ちでない方は",
+      "registerNow": "新規登録",
+      "features": {
+        "title": "主な機能",
+        "api": "複数のAPI形式をサポート",
+        "token": "柔軟なトークン管理",
+        "balance": "正確な残高管理"
+      }
+    },
+    "register": {
+      "title": "管理者アカウント登録",
+      "subtitle": "管理者アカウントを作成",
+      "usernameLabel": "ユーザー名",
+      "emailLabel": "メールアドレス",
+      "passwordLabel": "パスワード",
+      "register": "登録",
+      "registering": "登録中...",
+      "hasAccount": "すでにアカウントをお持ちの方",
+      "loginNow": "ログインする",
+      "registerFailed": "登録に失敗しました",
+      "adminExists": {
+        "title": "管理者が既に存在します",
+        "message": "システムに管理者アカウントが既に存在するため、新しい管理者を登録できません",
+        "backToLogin": "ログインに戻る"
+      }
+    },
+    "docs": {
+      "title": "SynapseHub API ドキュメント",
+      "subtitle": "API インターフェースの詳細説明",
+      "baseInfo": {
+        "title": "基本情報",
+        "baseUrl": "ベース URL",
+        "auth": {
+          "title": "認証",
+          "description": "すべての API リクエストには、ヘッダーに Bearer Token を含める必要があります："
+        }
+      },
+      "chatApi": {
+        "title": "Chat Completions API",
+        "endpoint": {
+          "title": "エンドポイント",
+          "description": "POST /v1/chat/completions"
+        },
+        "parameters": {
+          "title": "リクエストパラメータ",
+          "headers": {
+            "name": "パラメータ名",
+            "type": "タイプ",
+            "required": "必須",
+            "description": "説明"
+          },
+          "model": {
+            "name": "model",
+            "description": "使用するモデルの識別子"
+          },
+          "messages": {
+            "name": "messages",
+            "description": "会話メッセージ配列"
+          },
+          "stream": {
+            "name": "stream",
+            "description": "ストリームレスポンスを使用するかどうか"
+          }
+        },
+        "responses": {
+          "normal": {
+            "title": "通常レスポンス例"
+          },
+          "stream": {
+            "title": "ストリームレスポンス例"
+          },
+          "error": {
+            "title": "エラーレスポンス"
+          }
+        },
+        "curl": {
+          "title": "リクエスト例",
+          "streamTitle": "ストリームリクエスト例"
+        }
+      },
+      "usage": {
+        "title": "使用説明",
+        "billing": {
+          "title": "トークン課金",
+          "description": "各リクエストは、実際に使用されたトークン数に基づいて課金されます。課金ルール：",
+          "rules": {
+            "separate": "入力トークンと出力トークンは別々に課金されます",
+            "different": "モデルごとに異なる課金基準があります",
+            "same": "ストリームレスポンスと通常レスポンスは同じ課金基準を適用します"
+          }
+        },
+        "bestPractices": {
+          "title": "ベストプラクティス",
+          "tips": {
+            "stream": "より良いユーザー体験のためにストリームレスポンスの使用を推奨します",
+            "timeout": "タイムアウトを適切に設定してください（デフォルトは60秒）",
+            "error": "適切なエラー処理メカニズムを維持してください",
+            "history": "デバッグとトラッキングのために会話履歴を保存してください"
+          }
+        }
+      },
+      "difyApi": {
+        "title": "Dify フォーマット API",
+        "endpoint": {
+          "title": "エンドポイント",
+          "description": "POST /dify/v1/chat-messages"
+        },
+        "curl": {
+          "title": "リクエスト例"
+        },
+        "parameters": {
+          "title": "リクエストパラメータ",
+          "headers": {
+            "name": "パラメータ名",
+            "type": "タイプ",
+            "required": "必須",
+            "description": "説明"
+          },
+          "query": {
+            "description": "ユーザーからの質問"
+          },
+          "user": {
+            "description": "ユーザー識別子"
+          },
+          "responseMode": {
+            "description": "レスポンスモード、blocking または streaming"
+          },
+          "conversationId": {
+            "description": "会話ID、コンテキストの関連付けに使用"
+          }
+        },
+        "responses": {
+          "normal": {
+            "title": "通常レスポンス例"
+          },
+          "stream": {
+            "title": "ストリームレスポンス例"
+          }
+        }
+      }
+    },
+    "logs": {
+      "chat": "チャットログ",
+      "system": "システムログ"
+    },
+    "chatLogs": {
+      "filters": {
+        "startDate": "開始日",
+        "endDate": "終了日",
+        "userId": "ユーザーID",
+        "modelName": "モデル名",
+        "conversationId": "会話ID",
+        "export": "ログをエクスポート",
+        "exporting": "エクスポート中..."
+      },
+      "table": {
+        "userId": "ユーザーID",
+        "conversationId": "会話ID",
+        "model": "モデル",
+        "messageCount": "メッセージ数",
+        "totalTokens": "合計トークン",
+        "createdAt": "作成日時",
+        "actions": "アクション",
+        "viewDetails": "詳細を見る",
+        "noData": "データがありません",
+        "page": "ページ {page}",
+        "totalPages": "全 {totalPages} ページ",
+        "prev": "前へ",
+        "next": "次へ"
+      },
+      "detail": {
+        "title": "チャットログ詳細",
+        "close": "閉じる",
+        "basicInfo": {
+          "userId": "ユーザーID",
+          "conversationId": "会話ID",
+          "model": "モデル",
+          "tokenStats": "トークン統計",
+          "total": "合計",
+          "prompt": "プロンプト",
+          "completion": "補完"
+        },
+        "message": {
+          "image": "画像 {index}",
+          "function": "関数",
+          "metadata": "メタデータ"
+        }
+      }
+    },
+    "systemLogs": {
+      "filters": {
+        "startDate": "開始日",
+        "endDate": "終了日",
+        "level": "レベル",
+        "service": "サービス名",
+        "userId": "ユーザーID",
+        "ip": "IPアドレス",
+        "requestId": "リクエストID",
+        "message": "メッセージ",
+        "export": "ログをエクスポート",
+        "exporting": "エクスポート中...",
+        "clean": "ログをクリア",
+        "cleanDays": {
+          "3": "3日前のログをクリア",
+          "7": "7日前のログをクリア",
+          "30": "30日前のログをクリア"
+        },
+        "advancedFilter": "詳細フィルター",
+        "resetFilters": "フィルターをリセット"
+      },
+      "levels": {
+        "all": "すべてのレベル",
+        "info": "情報",
+        "warn": "警告",
+        "error": "エラー",
+        "debug": "デバッグ"
+      },
+      "table": {
+        "level": "レベル",
+        "message": "メッセージ",
+        "service": "サービス",
+        "userId": "ユーザーID",
+        "ip": "IP",
+        "time": "時間",
+        "actions": "アクション",
+        "viewDetails": "詳細を見る",
+        "noData": "データがありません",
+        "page": "ページ {page}",
+        "totalPages": "全 {totalPages} ページ",
+        "prev": "前へ",
+        "next": "次へ"
+      },
+      "detail": {
+        "title": "システムログ詳細",
+        "close": "閉じる",
+        "basicInfo": {
+          "service": "サービス",
+          "requestId": "リクエストID",
+          "userId": "ユーザーID",
+          "ip": "IPアドレス",
+          "message": "メッセージ",
+          "stack": "スタックトレース",
+          "metadata": "メタデータ"
+        }
+      }
+    },
+    "users": {
+      "title": "ユーザー管理",
+      "actions": {
+        "create": "ユーザーを作成",
+        "edit": "ユーザーを編集",
+        "delete": "ユーザーを削除",
+        "manageTokens": "トークン管理"
+      },
+      "form": {
+        "username": "ユーザー名",
+        "password": "パスワード",
+        "role": "役割",
+        "roles": {
+          "admin": "管理者",
+          "user": "一般ユーザー"
+        },
+        "submit": "送信",
+        "cancel": "キャンセル"
+      },
+      "table": {
+        "username": "ユーザー名",
+        "role": "役割",
+        "createdAt": "作成日時",
+        "actions": "アクション",
+        "noData": "データがありません",
+        "page": "ページ {page}",
+        "totalPages": "全 {totalPages} ページ",
+        "prev": "前へ",
+        "next": "次へ",
+        "roleDisplay": {
+          "admin": "管理者",
+          "user": "一般ユーザー"
+        }
+      },
+      "messages": {
+        "createSuccess": "ユーザーを作成しました",
+        "updateSuccess": "ユーザーを更新しました",
+        "deleteSuccess": "ユーザーを削除しました",
+        "deleteConfirm": "このユーザーを削除してもよろしいですか？",
+        "tokenCreateSuccess": "トークンを作成しました"
+      }
+    },
+    "upstream": {
+      "title": "アップストリーム設定",
+      "refresh": "更新",
+      "modelCount": "{count} モデル",
+      "actions": {
+        "addModel": "モデルを追加",
+        "edit": "編集",
+        "delete": "削除"
+      },
+      "modelProvider": {
+        "title": "モデルプロバイダーを選択",
+        "close": "閉じる",
+        "providers": {
+          "openai": {
+            "name": "OpenAI",
+            "description": "GPTシリーズモデルを含む"
+          },
+          "302ai": {
+            "name": "302AI",
+            "description": "302AIが提供するモデルサービス https://302.ai/"
+          },
+          "yunwu": {
+            "name": "雲霧",
+            "description": "雲霧が提供するモデルサービス https://yunwu.ai/"
+          },
+          "openaiCompatible": {
+            "name": "OpenAI互換",
+            "description": "OpenAIインターフェースと互換性のあるサービス"
+          }
+        },
+        "capabilities": {
+          "llm": "LLM"
+        }
+      }
+    }
+  }
+}

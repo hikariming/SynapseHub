@@ -1,0 +1,370 @@
+{
+  "app": {
+    "locale": "zh",
+    "login": {
+      "title": "登录",
+      "subtitle": "AI 对话管理平台",
+      "usernameLabel": "用户名",
+      "passwordLabel": "密码",
+      "login": "登录",
+      "loggingIn": "登录中...",
+      "noAccount": "还没有账号？",
+      "registerNow": "立即注册",
+      "features": {
+        "title": "功能特点",
+        "api": "支持多种 API 格式",
+        "token": "灵活的 Token 管理",
+        "balance": "精确的余额控制"
+      }
+    },
+    "register": {
+      "title": "注册管理员账号",
+      "subtitle": "创建你的管理员账号",
+      "usernameLabel": "用户名",
+      "emailLabel": "邮箱",
+      "passwordLabel": "密码",
+      "register": "注册",
+      "registering": "注册中...",
+      "hasAccount": "已有账号？",
+      "loginNow": "立即登录",
+      "registerFailed": "注册失败",
+      "adminExists": {
+        "title": "管理员已存在",
+        "message": "系统已有管理员账号，无法注册新的管理员账号",
+        "backToLogin": "返回登录"
+      }
+    },
+    "nav": {
+      "home": "首页",
+      "upstream": "上游",
+      "users": "用户",
+      "logs": "日志",
+      "setting": "设置",
+      "docs": "文档",
+      "logoAlt": "公司名称",
+      "openMenu": "打开主菜单"
+    },
+    "knowledge": {
+      "create": "创建素材库",
+      "createDescription": "新建素材库以导入链接，或PDF、Word、TXT、MD 等文档",
+      "name": "名称",
+      "description": "描述",
+      "fetchError": "获取素材库失败",
+      "createSuccess": "创建素材库成功"
+    },
+    "stats": {
+      "title": "系统概览",
+      "subtitle": "实时监控系统关键指标",
+      "upstream": "上游数量",
+      "tokens": "Token数量",
+      "calls": "今日调用数",
+      "alerts": "告警数量",
+      "viewAll": "查看详情",
+      "trendTitle": "调用趋势",
+      "timeRanges": {
+        "24h": "24小时",
+        "7d": "7天",
+        "30d": "30天",
+        "6m": "6个月",
+        "1y": "1年"
+      }
+    },
+    "docs": {
+      "title": "SynapseHub API 文档",
+      "subtitle": "API 接口详细说明文档",
+      "baseInfo": {
+        "title": "基础信息",
+        "baseUrl": "基础 URL",
+        "auth": {
+          "title": "认证",
+          "description": "所有 API 请求都需要在 Header 中包含 Bearer Token："
+        }
+      },
+      "chatApi": {
+        "title": "Chat Completions API",
+        "endpoint": {
+          "title": "端点",
+          "description": "POST /v1/chat/completions"
+        },
+        "parameters": {
+          "title": "请求参数",
+          "headers": {
+            "name": "参数名",
+            "type": "类型",
+            "required": "必填",
+            "description": "描述"
+          },
+          "model": {
+            "name": "model",
+            "description": "要使用的模型标识符"
+          },
+          "messages": {
+            "name": "messages",
+            "description": "对话消息数组"
+          },
+          "stream": {
+            "name": "stream",
+            "description": "是否使用流式响应"
+          }
+        },
+        "responses": {
+          "normal": {
+            "title": "非流式响应示例"
+          },
+          "stream": {
+            "title": "流式响应示例"
+          },
+          "error": {
+            "title": "错误响应"
+          }
+        },
+        "curl": {
+          "title": "请求示例",
+          "streamTitle": "流式请求示例"
+        }
+      },
+      "usage": {
+        "title": "使用说明",
+        "billing": {
+          "title": "Token 计费",
+          "description": "每次请求会根据实际使用的 token 数量进行计费。计费规则：",
+          "rules": {
+            "separate": "输入 token 和输出 token 分别计费",
+            "different": "不同模型的计费标准不同",
+            "same": "流式响应和非流式响应采用相同的计费标准"
+          }
+        },
+        "bestPractices": {
+          "title": "最佳实践",
+          "tips": {
+            "stream": "建议使用流式响应来获得更好的用户体验",
+            "timeout": "合理设置超时时间，默认为 60 秒",
+            "error": "保持良好的错误处理机制",
+            "history": "注意保存对话历史以便追踪和调试"
+          }
+        }
+      },
+      "difyApi": {
+        "title": "Dify 格式 API",
+        "endpoint": {
+          "title": "端点",
+          "description": "POST /dify/v1/chat-messages"
+        },
+        "curl": {
+          "title": "请求示例"
+        },
+        "parameters": {
+          "title": "请求参数",
+          "headers": {
+            "name": "参数名",
+            "type": "类型",
+            "required": "必填",
+            "description": "描述"
+          },
+          "query": {
+            "description": "用户输入的问题"
+          },
+          "user": {
+            "description": "用户标识"
+          },
+          "responseMode": {
+            "description": "响应模式，可选值：blocking 或 streaming"
+          },
+          "conversationId": {
+            "description": "会话ID，用于关联上下文"
+          }
+        },
+        "responses": {
+          "normal": {
+            "title": "普通响应示例"
+          },
+          "stream": {
+            "title": "流式响应示例"
+          }
+        }
+      }
+    },
+    "logs": {
+      "chat": "聊天日志",
+      "system": "系统日志"
+    },
+    "chatLogs": {
+      "filters": {
+        "startDate": "开始日期",
+        "endDate": "结束日期",
+        "userId": "用户ID",
+        "modelName": "模型名称",
+        "conversationId": "会话ID",
+        "export": "导出日志",
+        "exporting": "导出中..."
+      },
+      "table": {
+        "userId": "用户ID",
+        "conversationId": "会话ID", 
+        "model": "模型",
+        "messageCount": "消息数",
+        "totalTokens": "总Token",
+        "createdAt": "创建时间",
+        "actions": "操作",
+        "viewDetails": "查看详情",
+        "noData": "暂无数据",
+        "page": "第 {page} 页",
+        "totalPages": "共 {totalPages} 页",
+        "prev": "上一页",
+        "next": "下一页"
+      },
+      "detail": {
+        "title": "聊天日志详情",
+        "close": "关闭",
+        "basicInfo": {
+          "userId": "用户ID",
+          "conversationId": "会话ID",
+          "model": "模型",
+          "tokenStats": "Token 统计",
+          "total": "总计",
+          "prompt": "提示",
+          "completion": "补全"
+        },
+        "message": {
+          "image": "图片 {index}",
+          "function": "函数",
+          "metadata": "元数据"
+        }
+      }
+    },
+    "systemLogs": {
+      "filters": {
+        "startDate": "开始日期",
+        "endDate": "结束日期",
+        "level": "级别",
+        "service": "服务名称",
+        "userId": "用户ID",
+        "ip": "IP地址",
+        "requestId": "请求ID",
+        "message": "消息内容",
+        "export": "导出日志",
+        "exporting": "导出中...",
+        "clean": "清理日志",
+        "cleanDays": {
+          "3": "清理3天前的日志",
+          "7": "清理7天前的日志",
+          "30": "清理30天前的日志"
+        },
+        "advancedFilter": "高级筛选",
+        "resetFilters": "重置筛选条件"
+      },
+      "levels": {
+        "all": "所有级别",
+        "info": "信息",
+        "warn": "警告",
+        "error": "错误",
+        "debug": "调试"
+      },
+      "table": {
+        "level": "级别",
+        "message": "消息",
+        "service": "服务",
+        "userId": "用户ID",
+        "ip": "IP",
+        "time": "时间",
+        "actions": "操作",
+        "viewDetails": "查看详情",
+        "noData": "暂无数据",
+        "page": "第 {page} 页",
+        "totalPages": "共 {totalPages} 页",
+        "prev": "上一页",
+        "next": "下一页"
+      },
+      "detail": {
+        "title": "系统日志详情",
+        "close": "关闭",
+        "basicInfo": {
+          "service": "服务",
+          "requestId": "请求ID",
+          "userId": "用户ID",
+          "ip": "IP地址",
+          "message": "消息内容",
+          "stack": "错误堆栈",
+          "metadata": "元数据"
+        }
+      }
+    },
+    "users": {
+      "title": "用户管理",
+      "actions": {
+        "create": "创建用户",
+        "edit": "编辑用户",
+        "delete": "删除用户",
+        "manageTokens": "管理Token"
+      },
+      "form": {
+        "username": "用户名",
+        "password": "密码",
+        "role": "角色",
+        "roles": {
+          "admin": "管理员",
+          "user": "普通用户"
+        },
+        "submit": "提交",
+        "cancel": "取消"
+      },
+      "table": {
+        "username": "用户名",
+        "role": "角色",
+        "createdAt": "创建时间",
+        "actions": "操作",
+        "noData": "暂无数据",
+        "page": "第 {page} 页",
+        "totalPages": "共 {totalPages} 页",
+        "prev": "上一页",
+        "next": "下一页",
+        "roleDisplay": {
+          "admin": "管理员",
+          "user": "普通用户"
+        }
+      },
+      "messages": {
+        "createSuccess": "用户创建成功",
+        "updateSuccess": "用户更新成功",
+        "deleteSuccess": "用户删除成功",
+        "deleteConfirm": "确定要删除此用户吗？",
+        "tokenCreateSuccess": "Token创建成功"
+      }
+    },
+    "upstream": {
+      "title": "上游配置管理",
+      "refresh": "刷新",
+      "modelCount": "{count} 个模型",
+      "actions": {
+        "addModel": "添加模型",
+        "edit": "编辑",
+        "delete": "删除"
+      },
+      "modelProvider": {
+        "title": "选择模型供应商",
+        "close": "关闭",
+        "providers": {
+          "openai": {
+            "name": "OpenAI",
+            "description": "包含GPT系列模型"
+          },
+          "302ai": {
+            "name": "302AI",
+            "description": "302AI提供的模型服务 https://302.ai/"
+          },
+          "yunwu": {
+            "name": "云雾",
+            "description": "云雾提供的模型服务 https://yunwu.ai/"
+          },
+          "openaiCompatible": {
+            "name": "OpenAI 兼容接口",
+            "description": "任何兼容 OpenAI 接口的服务"
+          }
+        },
+        "capabilities": {
+          "llm": "LLM"
+        }
+      }
+    }
+  }
+}

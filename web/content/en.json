@@ -1,0 +1,370 @@
+{
+  "app": {
+    "locale": "en",
+    "nav": {
+      "home": "Home",
+      "upstream": "Upstream",
+      "users": "Users",
+      "logs": "Logs",
+      "setting": "Setting",
+      "docs": "Documentation",
+      "logoAlt": "Company Name",
+      "openMenu": "Open main menu"
+    },
+    "knowledge": {
+      "create": "Create Document Library",
+      "createDescription": "Import links, or PDF, Word, TXT, MD, etc. documents to create a knowledge base.",
+      "name": "Name",
+      "description": "Description",
+      "fetchError": "Failed to fetch material library",
+      "createSuccess": "Material library created successfully"
+    },
+    "stats": {
+      "title": "System Overview",
+      "subtitle": "Monitor key metrics in real-time",
+      "upstream": "Total Upstreams",
+      "tokens": "Total Tokens",
+      "calls": "Today's Calls",
+      "alerts": "Active Alerts",
+      "viewAll": "View details",
+      "trendTitle": "Call Trends",
+      "timeRanges": {
+        "24h": "24 Hours",
+        "7d": "7 Days",
+        "30d": "30 Days",
+        "6m": "6 Months",
+        "1y": "1 Year"
+      }
+    },
+    "login": {
+      "title": "Sign In",
+      "subtitle": "AI Chat Management Platform",
+      "usernameLabel": "Username",
+      "passwordLabel": "Password",
+      "login": "Sign In",
+      "loggingIn": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "registerNow": "Register now",
+      "features": {
+        "title": "Features",
+        "api": "Multiple API formats supported",
+        "token": "Flexible token management",
+        "balance": "Precise balance control"
+      }
+    },
+    "register": {
+      "title": "Register Admin Account",
+      "subtitle": "Create your admin account",
+      "usernameLabel": "Username",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "register": "Register",
+      "registering": "Registering...",
+      "hasAccount": "Already have an account?",
+      "loginNow": "Login now",
+      "registerFailed": "Registration failed",
+      "adminExists": {
+        "title": "Admin Already Exists",
+        "message": "An admin account already exists in the system. Cannot register new admin.",
+        "backToLogin": "Back to Login"
+      }
+    },
+    "docs": {
+      "title": "SynapseHub API Documentation",
+      "subtitle": "Detailed API Interface Documentation",
+      "baseInfo": {
+        "title": "Basic Information",
+        "baseUrl": "Base URL",
+        "auth": {
+          "title": "Authentication",
+          "description": "All API requests must include a Bearer Token in the header:"
+        }
+      },
+      "chatApi": {
+        "title": "Chat Completions API",
+        "endpoint": {
+          "title": "Endpoint",
+          "description": "POST /v1/chat/completions"
+        },
+        "parameters": {
+          "title": "Request Parameters",
+          "headers": {
+            "name": "Parameter",
+            "type": "Type",
+            "required": "Required",
+            "description": "Description"
+          },
+          "model": {
+            "name": "model",
+            "description": "Model identifier to use"
+          },
+          "messages": {
+            "name": "messages",
+            "description": "Array of conversation messages"
+          },
+          "stream": {
+            "name": "stream",
+            "description": "Whether to use streaming response"
+          }
+        },
+        "responses": {
+          "normal": {
+            "title": "Normal Response Example"
+          },
+          "stream": {
+            "title": "Stream Response Example"
+          },
+          "error": {
+            "title": "Error Response"
+          }
+        },
+        "curl": {
+          "title": "Request Example",
+          "streamTitle": "Stream Request Example"
+        }
+      },
+      "usage": {
+        "title": "Usage Guide",
+        "billing": {
+          "title": "Token Billing",
+          "description": "Each request is billed based on the actual number of tokens used. Billing rules:",
+          "rules": {
+            "separate": "Input and output tokens are billed separately",
+            "different": "Different models have different billing rates",
+            "same": "Stream and normal responses use the same billing rates"
+          }
+        },
+        "bestPractices": {
+          "title": "Best Practices",
+          "tips": {
+            "stream": "Use streaming responses for better user experience",
+            "timeout": "Set appropriate timeout values, default is 60 seconds",
+            "error": "Maintain proper error handling mechanisms",
+            "history": "Save conversation history for tracking and debugging"
+          }
+        }
+      },
+      "difyApi": {
+        "title": "Dify Format API",
+        "endpoint": {
+          "title": "Endpoint",
+          "description": "POST /dify/v1/chat-messages"
+        },
+        "curl": {
+          "title": "Request Example"
+        },
+        "parameters": {
+          "title": "Request Parameters",
+          "headers": {
+            "name": "Parameter",
+            "type": "Type",
+            "required": "Required",
+            "description": "Description"
+          },
+          "query": {
+            "description": "User's input question"
+          },
+          "user": {
+            "description": "User identifier"
+          },
+          "responseMode": {
+            "description": "Response mode, either blocking or streaming"
+          },
+          "conversationId": {
+            "description": "Conversation ID for context association"
+          }
+        },
+        "responses": {
+          "normal": {
+            "title": "Normal Response Example"
+          },
+          "stream": {
+            "title": "Stream Response Example"
+          }
+        }
+      }
+    },
+    "logs": {
+      "chat": "Chat Logs",
+      "system": "System Logs"
+    },
+    "chatLogs": {
+      "filters": {
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "userId": "User ID",
+        "modelName": "Model Name",
+        "conversationId": "Conversation ID",
+        "export": "Export Logs",
+        "exporting": "Exporting..."
+      },
+      "table": {
+        "userId": "User ID",
+        "conversationId": "Conversation ID",
+        "model": "Model",
+        "messageCount": "Messages",
+        "totalTokens": "Total Tokens",
+        "createdAt": "Created At",
+        "actions": "Actions",
+        "viewDetails": "View Details",
+        "noData": "No data available",
+        "page": "Page {page}",
+        "totalPages": "of {totalPages}",
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "detail": {
+        "title": "Chat Log Details",
+        "close": "Close",
+        "basicInfo": {
+          "userId": "User ID",
+          "conversationId": "Conversation ID",
+          "model": "Model",
+          "tokenStats": "Token Statistics",
+          "total": "Total",
+          "prompt": "Prompt",
+          "completion": "Completion"
+        },
+        "message": {
+          "image": "Image {index}",
+          "function": "Function",
+          "metadata": "Metadata"
+        }
+      }
+    },
+    "systemLogs": {
+      "filters": {
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "level": "Level",
+        "service": "Service Name",
+        "userId": "User ID",
+        "ip": "IP Address",
+        "requestId": "Request ID",
+        "message": "Message",
+        "export": "Export Logs",
+        "exporting": "Exporting...",
+        "clean": "Clean Logs",
+        "cleanDays": {
+          "3": "Clean logs older than 3 days",
+          "7": "Clean logs older than 7 days",
+          "30": "Clean logs older than 30 days"
+        },
+        "advancedFilter": "Advanced Filter",
+        "resetFilters": "Reset Filters"
+      },
+      "levels": {
+        "all": "All Levels",
+        "info": "Info",
+        "warn": "Warning",
+        "error": "Error",
+        "debug": "Debug"
+      },
+      "table": {
+        "level": "Level",
+        "message": "Message",
+        "service": "Service",
+        "userId": "User ID",
+        "ip": "IP",
+        "time": "Time",
+        "actions": "Actions",
+        "viewDetails": "View Details",
+        "noData": "No data available",
+        "page": "Page {page}",
+        "totalPages": "of {totalPages}",
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "detail": {
+        "title": "System Log Details",
+        "close": "Close",
+        "basicInfo": {
+          "service": "Service",
+          "requestId": "Request ID",
+          "userId": "User ID",
+          "ip": "IP Address",
+          "message": "Message",
+          "stack": "Error Stack",
+          "metadata": "Metadata"
+        }
+      }
+    },
+    "users": {
+      "title": "User Management",
+      "actions": {
+        "create": "Create User",
+        "edit": "Edit User",
+        "delete": "Delete User",
+        "manageTokens": "Manage Tokens"
+      },
+      "form": {
+        "username": "Username",
+        "password": "Password",
+        "role": "Role",
+        "roles": {
+          "admin": "Administrator",
+          "user": "Regular User"
+        },
+        "submit": "Submit",
+        "cancel": "Cancel"
+      },
+      "table": {
+        "username": "Username",
+        "role": "Role",
+        "createdAt": "Created At",
+        "actions": "Actions",
+        "noData": "No data available",
+        "page": "Page {page}",
+        "totalPages": "of {totalPages}",
+        "prev": "Previous",
+        "next": "Next",
+        "roleDisplay": {
+          "admin": "Administrator",
+          "user": "Regular User"
+        }
+      },
+      "messages": {
+        "createSuccess": "User created successfully",
+        "updateSuccess": "User updated successfully",
+        "deleteSuccess": "User deleted successfully",
+        "deleteConfirm": "Are you sure you want to delete this user?",
+        "tokenCreateSuccess": "Token created successfully"
+      }
+    },
+    "upstream": {
+      "title": "Upstream Configuration",
+      "refresh": "Refresh",
+      "modelCount": "{count} models",
+      "actions": {
+        "addModel": "Add Model",
+        "edit": "Edit",
+        "delete": "Delete"
+      },
+      "modelProvider": {
+        "title": "Select Model Provider",
+        "close": "Close",
+        "providers": {
+          "openai": {
+            "name": "OpenAI",
+            "description": "Including GPT series models"
+          },
+          "302ai": {
+            "name": "302AI",
+            "description": "Model services provided by 302AI https://302.ai/"
+          },
+          "yunwu": {
+            "name": "YunWu",
+            "description": "Model services provided by https://yunwu.ai/"
+          },
+          "openaiCompatible": {
+            "name": "OpenAI Compatible",
+            "description": "Any service compatible with OpenAI interface"
+          }
+        },
+        "capabilities": {
+          "llm": "LLM"
+        }
+      }
+    }
+  }
+}

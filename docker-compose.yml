@@ -1,0 +1,50 @@
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "26889:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: synapse_admin
+      MONGO_INITDB_ROOT_PASSWORD: Syn@pse2024_MongoDB#Secure
+    volumes:
+      - mongodb_data:/data/db
+    restart: unless-stopped
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6390:6379"
+    command: redis-server --requirepass Redis@Synapse2024#Complex
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  api:
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    image: synapse-api:latest
+    ports:
+      - "3088:3088"
+    environment:
+      - DATABASE_MONGO_URI=mongodb://synapse_admin:Syn@pse2024_MongoDB#Secure@mongodb:27017/api?authSource=admin
+      - DATABASE_REDIS_URI=redis://:Redis@Synapse2024#Complex@redis:6379
+    depends_on:
+      - mongodb
+      - redis
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    image: synapse-web:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:
+  redis_data: 

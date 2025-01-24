@@ -97,23 +97,24 @@ git clone https://github.com/yourusername/synapsehub.git
 
 # 安装依赖
 cd synapsehub
+
+cd web
 npm install
+npm run dev
+
+cd api
 
 # 配置环境变量
 cp .env.example .env
 # 编辑 .env 文件配置必要的参数
 
+npm install
+npm run dev
+
 # 启动服务
 npm run dev
 ```
 
-## 📚 文档
-
-访问我们的[在线文档](https://docs.yourdomain.com)获取详细的：
-- 安装指南
-- 配置说明
-- API 文档
-- 最佳实践
 
 ## 🤝 贡献
 
@@ -125,7 +126,7 @@ npm run dev
 
 ## 📄 许可证
 
-本项目采用 [MIT 许可证](LICENSE)。
+本项目采用 Apache 2.0 许可证。
 
 ## 🌟 Star History
 

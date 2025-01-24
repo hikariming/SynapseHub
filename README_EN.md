@@ -5,9 +5,9 @@
   <p><strong>One-Stop LLM API Management and Orchestration Platform</strong></p>
 </div>
 
-![SynapseHub Dashboard Preview](view.png)
-
 [简体中文](README.md) | [日本語](README_JP.md) | English
+
+![SynapseHub Dashboard Preview](view.png)
 
 ## 🌟 Introduction
 
@@ -37,6 +37,23 @@ SynapseHub is a powerful LLM API gateway and management platform designed to sim
 - **Standardized API**: OpenAI API format compatibility
 - **Extensibility**: Support for custom model integration
 
+## 🎯 Use Cases
+
+### Enterprise Applications
+- **Unified Model Management**: Centrally manage various LLM models used within the enterprise
+- **Cost Control**: Optimize model usage costs through intelligent scheduling and monitoring
+- **Security Compliance**: Meet enterprise requirements for data security and access control
+
+### Development Teams
+- **API Key Management**: Centrally manage and monitor team API key usage
+- **Development Testing**: Easily switch between different models for development and testing
+- **Usage Analysis**: Track and analyze team API usage
+
+### Service Providers
+- **Service Aggregation**: Provide unified LLM service access points for clients
+- **Resource Scheduling**: Intelligent allocation and management of computing resources
+- **Service Monitoring**: Comprehensive monitoring of service quality and usage
+
 ## 🚀 Quick Start
 
 ### Requirements
@@ -49,7 +66,7 @@ SynapseHub is a powerful LLM API gateway and management platform designed to sim
 ### Docker Deployment
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/synapsehub.git
+git clone https://github.com/hikariming/SynapseHub.git
 
 # Enter project directory
 cd synapsehub
@@ -70,4 +87,49 @@ Service Ports:
 - MongoDB: localhost:26889
 - Redis: localhost:6390
 
-// ... (其余部分可以根据需要翻译) ... 
+### Manual Installation
+```bash
+# Clone repository
+git clone https://github.com/hikariming/SynapseHub.git
+
+# Install dependencies
+cd synapsehub
+
+cd web
+npm install
+npm run dev
+
+cd api
+
+# Configure environment variables
+cp .env.example .env
+# Edit .env file to configure necessary parameters
+
+npm install
+npm run dev
+
+# Start service
+npm run dev
+```
+
+## 🤝 Contributing
+
+We welcome all forms of contributions, including but not limited to:
+- Submitting issues and suggestions
+- Improving documentation
+- Contributing code
+- Sharing usage experiences
+
+## 📄 License
+
+This project is licensed under the Apache 2.0 License.
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=hikariming/SynapseHub&type=Date)](https://star-history.com/#hikariming/SynapseHub&Date)
+
+---
+
+<div align="center">
+  <strong>If this project helps you, please give us a Star ⭐️</strong>
+</div> 

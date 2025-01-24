@@ -16,7 +16,7 @@ SynapseHub is a powerful LLM API gateway and management platform designed to sim
 ## ✨ Core Features
 
 ### 🚀 Smart Routing & Load Balancing
-- **Multi-Model Integration**: Support for OpenAI-style (with planned Dify-style support) LLM unified access
+- **Multi-Model Integration**: Support for OpenAI-style and Dify-style LLM unified access
 - **Intelligent Load Distribution**: Support for multiple load balancing strategies including round-robin and random
 
 ### 🔒 Security & Access Control
